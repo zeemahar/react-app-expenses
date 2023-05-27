@@ -3,7 +3,7 @@ import { GlobalContext } from '../context/GlobalState';
 
 
 export default() => {
-  const[text,setText] = useState('');
+  const[text,setText] = useState("");
   const[amount,setAmount] = useState(0) 
 
 const {addTransaction} = useContext(GlobalContext) 
@@ -13,7 +13,9 @@ const {addTransaction} = useContext(GlobalContext)
     id:Math.floor(Math.random() * 100000000),
     text,
     amount: +amount,
-  }
+  } 
+  setText('');
+  setAmount(0)
   addTransaction(newTransaction)
  }
 
