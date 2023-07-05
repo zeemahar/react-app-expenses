@@ -9,14 +9,14 @@ export default() => {
 const {addTransaction} = useContext(GlobalContext) 
  const onSubmit = e =>{
   e.preventDefault(); 
-  if(Number(amount) === 0){
-    alert('Please Enter the Amount')
-    return false
-}
-if(Number(amount) < 0) {
-    alert('Please Enter the Valid Amount')
-  return false
-}
+//   if(Number(amount) === 0){
+//     alert('Please Enter the Amount')
+//     return false
+// }
+// if(Number(amount) < 0) {
+//     alert('Please Enter the Valid Amount')
+//   return false
+// }
   const newTransaction  = {
     id:Math.floor(Math.random() * 100000000),
     text,
