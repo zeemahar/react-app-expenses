@@ -22,8 +22,6 @@ const {addTransaction} = useContext(GlobalContext)
     text,
     amount: +amount,
   } 
-  setText('');
-  setAmount(0)
   addTransaction(newTransaction)
  }
 
